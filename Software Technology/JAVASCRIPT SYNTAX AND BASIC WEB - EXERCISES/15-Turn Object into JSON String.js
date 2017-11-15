@@ -4,10 +4,10 @@ function result(arr) {
         let tokens=arr[i].split(" -> ");
         let key=tokens[0];
         let value=tokens[1];
-        if(!isNaN(value)){
-            obj[key]=Number(value);
-        }else{
-            obj[key]=value;
+        if (isNaN(value)) {
+            obj[key] = value;
+        } else {
+            obj[key] = Number(value);
         }
     }
     let str=JSON.stringify(obj);
