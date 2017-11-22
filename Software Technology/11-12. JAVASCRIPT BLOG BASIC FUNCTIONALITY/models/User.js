@@ -11,13 +11,11 @@ let userSchema = mongoose.Schema(
     }
 );
 
-userSchema.method ({
-   authenticate: function (password) {
-       let inputPasswordHash = encryption.hashPassword(password, this.salt);
-       let isSamePasswordHash = inputPasswordHash === this.passwordHash;
-
-       return isSamePasswordHash;
-   }
+userSchema.method({
+    authenticate: function (password) {
+        let inputPasswordHash = encryption.hashPassword(password, this.salt);
+        return inputPasswordHash === this.passwordHash;
+    }
 });
 
 const User = mongoose.model('User', userSchema);
