@@ -12,7 +12,24 @@
         <input type="submit" />
     </form>
 	<ul>
-        <!--Write your PHP Script here-->
+		<?php
+		$num1=0;
+		$num2=0;
+		if (isset($_GET['num1']) && isset($_GET['num2'])) {
+			$num1 = intval($_GET['num1']);
+			$num2 = intval($_GET['num2']);
+		}
+		for($i=1;$i<=$num1;$i++){
+		    echo "<li>List ".$i;
+		    echo "<ul>";
+			for($j=1;$j<=$num2;$j++){
+			    echo "<li>\tElement ".$i.".".$j;
+			    echo "</li>";
+            }
+            echo "</ul>";
+            echo "</li>";
+		}
+		?>
 	</ul>
 </body>
 </html>

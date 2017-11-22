@@ -13,6 +13,16 @@
     </style> 
 </head>
 <body>
-<!--Write your PHP Script here-->
+    <?php
+        $color=0;
+        for ($r=1;$r<=5;$r++){
+            for ($c=1;$c<=10;$c++){?>
+                <div style="background-color: rgb(<?=$color?>,<?=$color?>,<?=$color?>)"></div><?php
+                $color+=5;
+            }
+            $color+=1;
+            echo "</br>\n";
+        }
+    ?>
 </body>
 </html>

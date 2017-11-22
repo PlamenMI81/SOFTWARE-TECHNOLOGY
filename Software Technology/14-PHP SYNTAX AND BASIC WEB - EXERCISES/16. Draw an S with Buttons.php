@@ -5,6 +5,22 @@
     <title>First Steps Into PHP</title>
 </head>
 <body>
-<!--Write your PHP Script here-->
+    <?php
+    $w=5;
+    $h=9;
+    for($i=1;$i<=$h;$i++){
+        for($j=1;$j<=$w;$j++){
+
+            if($i==1 || $i==5 || $i==9 ){
+				echo "<button style='background-color: blue'>1</button>";
+            }else if(($j==1 && $i<5) || ($j==5 && $i>5)){
+				echo "<button style='background-color: blue'>1</button>";
+			}else{
+				echo "<button>0</button>";
+			}
+        }
+        echo "</br>";
+    }
+    ?>
 </body>
 </html>
