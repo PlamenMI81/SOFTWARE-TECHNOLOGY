@@ -36,11 +36,12 @@ class CalculatorController extends Controller
 				case '-':$result=$leftOperand-$rightOperand;break;
 				case '*':$result=$leftOperand*$rightOperand;break;
 				case '/':$result=$leftOperand/$rightOperand;break;
+				case '^':$result=pow($leftOperand,$rightOperand);break;
 			}
 			return $this->render('calculator/index.html.twig',
 				['result'=>$result,'calculator'=>$calculator,'form'=>$form->createView()]);
 		}
-		return $this->render('calculator/index.html.twig');
+		return $this->render('calculator/index.html.twig',['form'=>$form->createView()]);
 
     }
 }

@@ -21,20 +21,20 @@ class __TwigTemplate_4f982514dcea170d2d1e17f88bf1a76f3111ef67861768f823540257a0f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_cd152d2328a466f342c24a1956fe80b3e8cb2f6ef2dcc6a311680672fe352f87 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_cd152d2328a466f342c24a1956fe80b3e8cb2f6ef2dcc6a311680672fe352f87->enter($__internal_cd152d2328a466f342c24a1956fe80b3e8cb2f6ef2dcc6a311680672fe352f87_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "calculator/index.html.twig"));
+        $__internal_9ed827fdd39dfa1aaef3a54fa9cb245baddc1adc6d6a8c34dc2718df44305d6d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9ed827fdd39dfa1aaef3a54fa9cb245baddc1adc6d6a8c34dc2718df44305d6d->enter($__internal_9ed827fdd39dfa1aaef3a54fa9cb245baddc1adc6d6a8c34dc2718df44305d6d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "calculator/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_cd152d2328a466f342c24a1956fe80b3e8cb2f6ef2dcc6a311680672fe352f87->leave($__internal_cd152d2328a466f342c24a1956fe80b3e8cb2f6ef2dcc6a311680672fe352f87_prof);
+        $__internal_9ed827fdd39dfa1aaef3a54fa9cb245baddc1adc6d6a8c34dc2718df44305d6d->leave($__internal_9ed827fdd39dfa1aaef3a54fa9cb245baddc1adc6d6a8c34dc2718df44305d6d_prof);
 
     }
 
     // line 3
     public function block_main($context, array $blocks = array())
     {
-        $__internal_54fb40badefab8d356f8ffbd10c0313fa1a286332d83b4fa8e4f8cc7fa0d7c42 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_54fb40badefab8d356f8ffbd10c0313fa1a286332d83b4fa8e4f8cc7fa0d7c42->enter($__internal_54fb40badefab8d356f8ffbd10c0313fa1a286332d83b4fa8e4f8cc7fa0d7c42_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_1504078be4f2f9409e9be939c658a87b21d920ce8f165d24733d45f10079ff0d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1504078be4f2f9409e9be939c658a87b21d920ce8f165d24733d45f10079ff0d->enter($__internal_1504078be4f2f9409e9be939c658a87b21d920ce8f165d24733d45f10079ff0d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
         // line 4
         echo "    <div class=\"container body-content span=8 offset=2\">
@@ -73,6 +73,10 @@ class __TwigTemplate_4f982514dcea170d2d1e17f88bf1a76f3111ef67861768f823540257a0f
         // line 21
         echo (((array_key_exists("calculator", $context) && ($this->getAttribute((isset($context["calculator"]) ? $context["calculator"] : $this->getContext($context, "calculator")), "operator", array()) == "/"))) ? ("selected") : (""));
         echo ">/</option>
+                                <option value=\"^\" ";
+        // line 22
+        echo (((array_key_exists("calculator", $context) && ($this->getAttribute((isset($context["calculator"]) ? $context["calculator"] : $this->getContext($context, "calculator")), "operator", array()) == "^"))) ? ("selected") : (""));
+        echo ">^</option>
                             </select>
                         </div>
                     </div>
@@ -81,7 +85,7 @@ class __TwigTemplate_4f982514dcea170d2d1e17f88bf1a76f3111ef67861768f823540257a0f
                         <div class=\"col-sm-4 \">
                             <input type=\"text\" class=\"form-control\" id=\"rightOperand\" placeholder=\"Right Operand\"
                                    name=\"calculator[rightOperand]\" value=\"";
-        // line 29
+        // line 30
         echo twig_escape_filter($this->env, ((($this->getAttribute((isset($context["calculator"]) ? $context["calculator"] : null), "rightOperand", array(), "any", true, true) &&  !(null === $this->getAttribute((isset($context["calculator"]) ? $context["calculator"] : null), "rightOperand", array())))) ? ($this->getAttribute((isset($context["calculator"]) ? $context["calculator"] : null), "rightOperand", array())) : ("")), "html", null, true);
         echo "\">
                         </div>
@@ -94,21 +98,21 @@ class __TwigTemplate_4f982514dcea170d2d1e17f88bf1a76f3111ef67861768f823540257a0f
                     </div>
 
                     ";
-        // line 39
+        // line 40
         if (array_key_exists("form", $context)) {
-            // line 40
+            // line 41
             echo "                        ";
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "_token", array()), 'row');
             echo "
                     ";
         }
-        // line 42
+        // line 43
         echo "
                     <div class=\"form-group\">
                         <div class=\"col-sm-4 \">
                             <input type=\"text\" class=\"form-control\" id=\"result\" placeholder=\"Result\"
                                    name=\"result\" value=\"";
-        // line 46
+        // line 47
         echo twig_escape_filter($this->env, (((array_key_exists("result", $context) &&  !(null === (isset($context["result"]) ? $context["result"] : $this->getContext($context, "result"))))) ? ((isset($context["result"]) ? $context["result"] : $this->getContext($context, "result"))) : ("")), "html", null, true);
         echo "\">
                         </div>
@@ -125,7 +129,7 @@ class __TwigTemplate_4f982514dcea170d2d1e17f88bf1a76f3111ef67861768f823540257a0f
     </div>
 ";
         
-        $__internal_54fb40badefab8d356f8ffbd10c0313fa1a286332d83b4fa8e4f8cc7fa0d7c42->leave($__internal_54fb40badefab8d356f8ffbd10c0313fa1a286332d83b4fa8e4f8cc7fa0d7c42_prof);
+        $__internal_1504078be4f2f9409e9be939c658a87b21d920ce8f165d24733d45f10079ff0d->leave($__internal_1504078be4f2f9409e9be939c658a87b21d920ce8f165d24733d45f10079ff0d_prof);
 
     }
 
@@ -141,7 +145,7 @@ class __TwigTemplate_4f982514dcea170d2d1e17f88bf1a76f3111ef67861768f823540257a0f
 
     public function getDebugInfo()
     {
-        return array (  112 => 46,  106 => 42,  100 => 40,  98 => 39,  85 => 29,  74 => 21,  70 => 20,  66 => 19,  62 => 18,  52 => 11,  44 => 6,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  116 => 47,  110 => 43,  104 => 41,  102 => 40,  89 => 30,  78 => 22,  74 => 21,  70 => 20,  66 => 19,  62 => 18,  52 => 11,  44 => 6,  40 => 4,  34 => 3,  11 => 1,);
     }
 
     public function getSource()
@@ -167,6 +171,7 @@ class __TwigTemplate_4f982514dcea170d2d1e17f88bf1a76f3111ef67861768f823540257a0f
                                 <option value=\"-\" {{ calculator is defined and calculator.operator == '-' ? 'selected' : '' }}>-</option>
                                 <option value=\"*\" {{ calculator is defined and calculator.operator == '*' ? 'selected' : '' }}>*</option>
                                 <option value=\"/\" {{ calculator is defined and calculator.operator == '/' ? 'selected' : '' }}>/</option>
+                                <option value=\"^\" {{ calculator is defined and calculator.operator == '^' ? 'selected' : '' }}>^</option>
                             </select>
                         </div>
                     </div>

@@ -18,9 +18,9 @@ class Calculator{
 	 * */
 	private $operator;
 
+
+
 	/**
-	 * Get left operand
-	 *
 	 * @return float
 	 */
 	public function getLeftOperand()
@@ -29,21 +29,16 @@ class Calculator{
 	}
 
 	/**
-	 * Set left operand
-	 *
-	 * @param float $operand
-	 *
-	 * @return Calculator
+	 * @param float $leftOperand
+	 * @return $this
 	 */
-	public function setLeftOperand($operand)
+	public function setLeftOperand($leftOperand)
 	{
-		$this->leftoperand=$operand;
+		$this->leftOperand = $leftOperand;
 		return $this;
 	}
 
 	/**
-	 * Get right operand
-	 *
 	 * @return float
 	 */
 	public function getRightOperand()
@@ -52,22 +47,17 @@ class Calculator{
 	}
 
 	/**
-	 * Set right operand
-	 *
-	 * @param float $operand
-	 *
-	 * @return Calculator
+	 * @param float $rightOperand
+	 * @return $this
 	 */
-	public function setRightOperand($operand)
+	public function setRightOperand($rightOperand)
 	{
-		$this->rightOperand=$operand;
+		$this->rightOperand = $rightOperand;
 		return $this;
 	}
 
 	/**
-	 * Get operator
-	 *
-	 * @return float
+	 * @return string
 	 */
 	public function getOperator()
 	{
@@ -75,15 +65,13 @@ class Calculator{
 	}
 
 	/**
-	 * Set operator
-	 *
 	 * @param string $operator
-	 *
-	 * @return Calculator
+	 * @return $this
 	 */
 	public function setOperator($operator)
 	{
-		$this->operator=$operator;
+		$this->operator = $operator;
 		return $this;
 	}
+
 }
