@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Enter your path:
+    <input type="text" name="file"/>
+    <input type="submit" />
+</form>
+<h1 th:text="${allFiles!=null} ? 'Files:' : ''"></h1>
+
+<div th:each = "file : ${allFiles}"
+     th:text = "${file.name}">
+</div>
+
+</body>
+</html>
